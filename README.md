@@ -1,8 +1,7 @@
-pdf2imgpdf
+pdf2imgpdf (pdf2img then img2pdf)
 ====
 
-A utility to covert a PDF to a new PDF which every page is an image,  so it can be displayed very well in anywhere(A utility to covert a PDF to a new PDF which every page is an image, 
-so it can be displayed very well in anywhere(Especially in Kindle).
+A utility to covert a PDF to a new PDF which every page is an image,  so it can be displayed very well in anywhere(Especially in Kindle).
 
 Some PDFs connot be deplayed well in Kindle, we can export to a new PDF with Mac Preview,
 but Preview often hang up or crash when exporting some of them.
@@ -22,4 +21,4 @@ pdf2imgpdf converts PDF like Mac Preview.
 
 ### Usage:
 	
-	pdf2imgpdf --src="/tmp/demo.pdf" --dest="/tmp/well-converted.pdf"
+	python pdf2imgpdf --src="/tmp/demo.pdf" --dest="/tmp/well-converted.pdf"
