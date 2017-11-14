@@ -24,10 +24,10 @@ define("dest", "/tmp/demo_converted.pdf", type=str,
 
 
 def convert(src, dest):
-    # specify paper size (A4)
     src = escape.to_unicode(src)
     dest = escape.to_unicode(dest)
 
+    # specify paper size (A4)
     a4inpt = (img2pdf.mm_to_pt(210), img2pdf.mm_to_pt(297))
     layout_fun = img2pdf.get_layout_fun(a4inpt)
 
