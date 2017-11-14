@@ -19,7 +19,8 @@ import img2pdf
 
 
 define("src", "/tmp/demo.pdf", type=str, help="The source PDF filename")
-define("dest", "/tmp/demo_converted.pdf", type=str, help="The destination PDF filename")
+define("dest", "/tmp/demo_converted.pdf", type=str,
+       help="The destination PDF filename")
 
 
 def convert(src, dest):
@@ -63,5 +64,5 @@ def pdf2img(src_pdf, pagenum=0, filename="filename", resolution=600):
 
 
 if __name__ == '__main__':
-	parse_command_line()
-   	convert(options.src, options.dest)
+    parse_command_line()
+    convert(options.src, options.dest)
